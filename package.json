@@ -1,0 +1,23 @@
+{
+  "name": "servidor-produtos-fake-001",
+  "version": "1.0.0",
+  "description": "Pacote npm para configurar rapidamente um servidor falso de produtos usando json-server. Ideal para desenvolvimento e testes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "keywords": [
+    "json-server",
+    "fake-server",
+    "mock-api",
+    "products",
+    "development",
+    "testing"
+  ],
+  "author": "Francisco Jhonnatas Ribeiro Santos",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.2"
+  }
+}

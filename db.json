@@ -1,0 +1,50 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Smartphone XYZ",
+        "description": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera de 48MP.",
+        "price": 1499.99,
+        "category": "Eletrônicos",
+        "stock": 30,
+        "image": "https://example.com/images/smartphone_xyz.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Notebook ABC",
+        "description": "Notebook com processador Intel i7, 16GB de RAM, 512GB SSD e tela Full HD.",
+        "price": 3499.99,
+        "category": "Computadores",
+        "stock": 15,
+        "image": "https://example.com/images/notebook_abc.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Fone de Ouvido Bluetooth",
+        "description": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração.",
+        "price": 299.99,
+        "category": "Acessórios",
+        "stock": 50,
+        "image": "https://example.com/images/fone_bluetooth.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Smartwatch DEF",
+        "description": "Relógio inteligente com monitoramento de batimentos cardíacos, GPS e notificações.",
+        "price": 799.99,
+        "category": "Wearables",
+        "stock": 20,
+        "image": "https://example.com/images/smartwatch_def.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Câmera Digital GHI",
+        "description": "Câmera digital com lente de 24MP, zoom óptico de 10x e gravação de vídeo em 4K.",
+        "price": 2299.99,
+        "category": "Fotografia",
+        "stock": 10,
+        "image": "https://example.com/images/camera_ghi.jpg"
+      }
+    ]
+  }
+  
