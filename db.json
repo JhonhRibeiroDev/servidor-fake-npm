@@ -1,50 +1,1217 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Smartphone XYZ",
-        "description": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera de 48MP.",
-        "price": 1499.99,
-        "category": "Eletrônicos",
-        "stock": 30,
-        "image": "https://example.com/images/smartphone_xyz.jpg"
-      },
-      {
-        "id": 2,
-        "name": "Notebook ABC",
-        "description": "Notebook com processador Intel i7, 16GB de RAM, 512GB SSD e tela Full HD.",
-        "price": 3499.99,
-        "category": "Computadores",
-        "stock": 15,
-        "image": "https://example.com/images/notebook_abc.jpg"
-      },
-      {
-        "id": 3,
-        "name": "Fone de Ouvido Bluetooth",
-        "description": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração.",
-        "price": 299.99,
-        "category": "Acessórios",
-        "stock": 50,
-        "image": "https://example.com/images/fone_bluetooth.jpg"
-      },
-      {
-        "id": 4,
-        "name": "Smartwatch DEF",
-        "description": "Relógio inteligente com monitoramento de batimentos cardíacos, GPS e notificações.",
-        "price": 799.99,
-        "category": "Wearables",
-        "stock": 20,
-        "image": "https://example.com/images/smartwatch_def.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Câmera Digital GHI",
-        "description": "Câmera digital com lente de 24MP, zoom óptico de 10x e gravação de vídeo em 4K.",
-        "price": 2299.99,
-        "category": "Fotografia",
-        "stock": 10,
-        "image": "https://example.com/images/camera_ghi.jpg"
+  "eletronicos": [
+    {
+      "id": 1,
+      "nome": "Smartphone XYZ",
+      "descricao": "Um smartphone com tela de 6.5 polegadas, 128GB de armazenamento e câmera de 48MP. Ideal para quem busca desempenho e qualidade de imagem.",
+      "preco": 1499.99,
+      "estoque": 30,
+      "imagem": "https://example.com/images/smartphone_xyz.jpg",
+      "marca": "XYZ Tech",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "joao_silva",
+          "comentario": "Ótimo smartphone! A bateria dura o dia inteiro.",
+          "nota": 4.5
+        },
+        {
+          "usuario": "maria_oliveira",
+          "comentario": "Boa qualidade, mas poderia ser mais leve.",
+          "nota": 4.0
+        }
+      ],
+      "especificacoes": {
+        "processador": "Octa-core 2.8 GHz",
+        "memoria_ram": "8 GB",
+        "armazenamento": "128 GB",
+        "tela": "6.5 polegadas, AMOLED",
+        "sistema_operacional": "Android 12"
       }
-    ]
-  }
-  
+    },
+    {
+      "id": 2,
+      "nome": "Notebook ABC",
+      "descricao": "Notebook com processador Intel i7, 16GB de RAM, 512GB SSD e tela Full HD. Perfeito para tarefas pesadas e trabalho remoto.",
+      "preco": 3499.99,
+      "estoque": 15,
+      "imagem": "https://example.com/images/notebook_abc.jpg",
+      "marca": "ABC Tech",
+      "garantia": "2 anos",
+      "avaliacoes": [
+        {
+          "usuario": "pedro_santos",
+          "comentario": "Excelente performance e velocidade.",
+          "nota": 5.0
+        },
+        {
+          "usuario": "lucas_martins",
+          "comentario": "Um pouco pesado, mas vale a pena.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "processador": "Intel Core i7-11800H",
+        "memoria_ram": "16 GB",
+        "armazenamento": "512 GB SSD",
+        "tela": "15.6 polegadas, Full HD",
+        "sistema_operacional": "Windows 11"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Fone de Ouvido Bluetooth",
+      "descricao": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração. Ideal para viagens e trabalho em ambientes barulhentos.",
+      "preco": 299.99,
+      "estoque": 50,
+      "imagem": "https://example.com/images/fone_bluetooth.jpg",
+      "marca": "SoundPro",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "ana_pereira",
+          "comentario": "Som de alta qualidade e conforto.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "carlos_lima",
+          "comentario": "O cancelamento de ruído é eficaz, mas a bateria poderia durar mais.",
+          "nota": 4.2
+        }
+      ],
+      "especificacoes": {
+        "tipo": "Bluetooth",
+        "cancelamento_ruido": "Sim",
+        "tempo_bateria": "20 horas",
+        "distancia_maxima": "30 metros",
+        "compatibilidade": "iOS e Android"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Smartwatch DEF",
+      "descricao": "Relógio inteligente com monitoramento de batimentos cardíacos, GPS e notificações. Ideal para acompanhar suas atividades físicas e saúde.",
+      "preco": 799.99,
+      "estoque": 20,
+      "imagem": "https://example.com/images/smartwatch_def.jpg",
+      "marca": "DEF Wearables",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "marcio_silva",
+          "comentario": "Ótimo para monitoramento de atividades. Recomendado!",
+          "nota": 4.7
+        },
+        {
+          "usuario": "juliana_gomes",
+          "comentario": "A bateria poderia durar mais.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "monitoramento_atividades": "Sim",
+        "GPS": "Sim",
+        "notificacoes": "Sim",
+        "bateria": "7 dias",
+        "compatibilidade": "iOS e Android"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Câmera Digital GHI",
+      "descricao": "Câmera digital com lente de 24MP, zoom óptico de 10x e gravação de vídeo em 4K. Perfeita para fotógrafos amadores e profissionais.",
+      "preco": 2299.99,
+      "estoque": 10,
+      "imagem": "https://example.com/images/camera_ghi.jpg",
+      "marca": "GHI Cameras",
+      "garantia": "2 anos",
+      "avaliacoes": [
+        {
+          "usuario": "fernando_araujo",
+          "comentario": "Excelente qualidade de imagem e zoom.",
+          "nota": 5.0
+        },
+        {
+          "usuario": "isabela_souza",
+          "comentario": "A câmera é boa, mas o preço é um pouco alto.",
+          "nota": 4.0
+        }
+      ],
+      "especificacoes": {
+        "resolucao": "24 MP",
+        "zoom_optico": "10x",
+        "video_4K": "Sim",
+        "tela_lcd": "3 polegadas",
+        "tipo_bateria": "Lithium-ion"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Tablet Pro X",
+      "descricao": "Tablet com tela de 12.9 polegadas, processador potente e suporte a caneta stylus. Ideal para design e produtividade.",
+      "preco": 1199.99,
+      "estoque": 25,
+      "imagem": "https://example.com/images/tablet_pro_x.jpg",
+      "marca": "ProTech",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "renata_moura",
+          "comentario": "Ótima tela e performance. Ideal para trabalho e lazer.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "lucas_souza",
+          "comentario": "Bateria poderia durar mais, mas é um ótimo produto.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "tela": "12.9 polegadas, Retina",
+        "processador": "Quad-core 3.0 GHz",
+        "memoria_ram": "8 GB",
+        "armazenamento": "256 GB",
+        "sistema_operacional": "iOS 16"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Projetor Ultra HD",
+      "descricao": "Projetor com resolução Ultra HD, brilho de 3000 lúmens e suporte a conexões wireless. Ideal para apresentações e entretenimento.",
+      "preco": 1599.99,
+      "estoque": 12,
+      "imagem": "https://example.com/images/projetor_ultra_hd.jpg",
+      "marca": "BrightView",
+      "garantia": "2 anos",
+      "avaliacoes": [
+        {
+          "usuario": "julio_ferreira",
+          "comentario": "Imagens nítidas e cores vibrantes.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "paula_silva",
+          "comentario": "O brilho é bom, mas poderia ter uma opção de ajuste mais fino.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "resolucao": "Ultra HD",
+        "brilho": "3000 lúmens",
+        "conexoes_wireless": "Sim",
+        "entradas": "HDMI, USB, VGA",
+        "tela_maxima": "120 polegadas"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Micro-ondas Digital",
+      "descricao": "Micro-ondas com painel digital, 1000W de potência e 10 níveis de ajuste. Ideal para uso doméstico.",
+      "preco": 349.99,
+      "estoque": 40,
+      "imagem": "https://example.com/images/microondas_digital.jpg",
+      "marca": "HomeTech",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "carla_oliveira",
+          "comentario": "Muito prático e fácil de usar.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "gustavo_martins",
+          "comentario": "A função descongelar poderia ser mais eficiente.",
+          "nota": 4.2
+        }
+      ],
+      "especificacoes": {
+        "potencia": "1000W",
+        "painel_digital": "Sim",
+        "nivels_ajuste": "10",
+        "tamanho_interno": "30 litros",
+        "cor": "Prata"
+      }
+    }
+  ],
+  "brinquedos": [
+    {
+      "id": 1,
+      "nome": "Carrinho de Controle Remoto Turbo",
+      "descricao": "Carrinho de controle remoto com velocidade máxima de 30 km/h e bateria recarregável. Ideal para crianças e entusiastas de veículos.",
+      "preco": 199.99,
+      "estoque": 25,
+      "imagem": "https://example.com/images/carrinho_controle_remoto.jpg",
+      "marca": "TurboToys",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "joana_santos",
+          "comentario": "Muito divertido e resistente.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "pedro_oliveira",
+          "comentario": "Boa velocidade, mas o controle poderia ter mais alcance.",
+          "nota": 4.2
+        }
+      ],
+      "especificacoes": {
+        "velocidade_maxima": "30 km/h",
+        "bateria": "Recarregável, 60 minutos de duração",
+        "controle_remoto": "2.4 GHz",
+        "escala": "1:10"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Boneca Interativa Mágica",
+      "descricao": "Boneca interativa com sensores de toque e som. Fala e canta músicas para interagir com as crianças.",
+      "preco": 159.99,
+      "estoque": 40,
+      "imagem": "https://example.com/images/boneca_interativa.jpg",
+      "marca": "MagicDolls",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "carla_silva",
+          "comentario": "Ótima para crianças pequenas, muito interativa.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "luan_souza",
+          "comentario": "A boneca é divertida, mas o som poderia ser mais claro.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "sensores": "Toque e som",
+        "funcao_interativa": "Fala e canta músicas",
+        "bateria": "Pilhas AA (não inclusas)",
+        "material": "Plástico e tecido"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Quebra-Cabeça 1000 Peças",
+      "descricao": "Quebra-cabeça com 1000 peças, ideal para todas as idades. Imagem vibrante e detalhada.",
+      "preco": 89.99,
+      "estoque": 60,
+      "imagem": "https://example.com/images/quebra_cabeca.jpg",
+      "marca": "PuzzleWorld",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "marcio_ferreira",
+          "comentario": "Desafio divertido e qualidade das peças excelente.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "beatriz_oliveira",
+          "comentario": "Bom para passar o tempo, mas a imagem poderia ser mais nítida.",
+          "nota": 4.2
+        }
+      ],
+      "especificacoes": {
+        "peças": "1000",
+        "material": "Cartão prensado",
+        "tamanho_final": "70 x 50 cm",
+        "imagem": "Paisagem natural"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Lego Cidade Grande",
+      "descricao": "Conjunto de blocos LEGO com peças para construir uma cidade grande. Inclui figuras e acessórios para criar cenários.",
+      "preco": 299.99,
+      "estoque": 15,
+      "imagem": "https://example.com/images/lego_cidade.jpg",
+      "marca": "LEGO",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "luan_costa",
+          "comentario": "Ótimo para estimular a criatividade.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "paula_souza",
+          "comentario": "Um pouco caro, mas vale a pena pela qualidade.",
+          "nota": 4.6
+        }
+      ],
+      "especificacoes": {
+        "peças": "1500",
+        "inclui_figuras": "Sim",
+        "tipo": "Construção de cidade",
+        "recomendado_para": "Acima de 6 anos"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Robo Programável",
+      "descricao": "Robô programável que pode ser controlado via aplicativo. Ideal para aprendizado de programação e diversão.",
+      "preco": 399.99,
+      "estoque": 20,
+      "imagem": "https://example.com/images/robo_programavel.jpg",
+      "marca": "TechBots",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "renata_martins",
+          "comentario": "Excelente para aprender programação. Muito educativo.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "rafael_silva",
+          "comentario": "Funciona bem, mas o aplicativo pode ser mais intuitivo.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "programacao": "Via aplicativo",
+        "bateria": "Recarregável, 90 minutos de duração",
+        "funcionalidades": "Movimento, som e luz",
+        "idade_recomendada": "Acima de 8 anos"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Puzzle 3D Dinossauro",
+      "descricao": "Quebra-cabeça 3D de dinossauro com peças que se encaixam para formar uma réplica detalhada de um dinossauro.",
+      "preco": 119.99,
+      "estoque": 30,
+      "imagem": "https://example.com/images/puzzle_3d_dinossauro.jpg",
+      "marca": "3D Puzzles",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "daniel_oliveira",
+          "comentario": "Desafio interessante e peça de decoração incrível.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "laura_souza",
+          "comentario": "Divertido, mas algumas peças são difíceis de encaixar.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "peças": "150",
+        "material": "Plástico",
+        "tamanho_final": "30 x 20 x 15 cm",
+        "dificuldade": "Médio"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Jogo de Tabuleiro Estratégico",
+      "descricao": "Jogo de tabuleiro com peças e cartas para desenvolver estratégias e competir com amigos. Ideal para noites de jogos em família.",
+      "preco": 89.99,
+      "estoque": 35,
+      "imagem": "https://example.com/images/jogo_tabuleiro.jpg",
+      "marca": "GameMasters",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "ana_martins",
+          "comentario": "Muito divertido e desafiador. Ideal para jogar com amigos.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "gustavo_pereira",
+          "comentario": "Regras um pouco complexas, mas vale a pena.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "número_de_jogadores": "2-4",
+        "tempo_medio_jogo": "60-90 minutos",
+        "idade_recomendada": "Acima de 10 anos",
+        "componentes": "Tabuleiro, peças, cartas e dados"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Cubo Mágico Clássico",
+      "descricao": "Cubo mágico com cores vibrantes e mecanismos de alta qualidade. Ideal para desenvolver habilidades de resolução de problemas.",
+      "preco": 29.99,
+      "estoque": 100,
+      "imagem": "https://example.com/images/cubo_magico.jpg",
+      "marca": "PuzzleCube",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "fernando_costa",
+          "comentario": "Ótimo para passar o tempo e desafiar a mente.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "beatriz_silva",
+          "comentario": "Desafiante e divertido, mas o mecanismo pode ficar preso.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "tipo": "3x3",
+        "cores": "Vibrantes",
+        "material": "Plástico",
+        "dificuldade": "Médio"
+      }
+    }
+  ],
+  "roupas": [
+    {
+      "id": 1,
+      "nome": "Camiseta Básica",
+      "descricao": "Camiseta básica de algodão com ajuste confortável. Disponível em várias cores e tamanhos.",
+      "preco": 49.99,
+      "estoque": 120,
+      "imagem": "https://example.com/images/camiseta_basica.jpg",
+      "marca": "FashionWear",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "ana_silva",
+          "comentario": "Muito confortável e de boa qualidade.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "pedro_santos",
+          "comentario": "Ótima camiseta para o dia a dia.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "material": "100% algodão",
+        "tamanhos_disponiveis": [
+          "P",
+          "M",
+          "G",
+          "GG"
+        ],
+        "cores": [
+          "Branco",
+          "Preto",
+          "Azul",
+          "Vermelho"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Calça Jeans Slim",
+      "descricao": "Calça jeans slim fit com lavagem escura e detalhes rasgados. Ideal para um look casual e moderno.",
+      "preco": 129.99,
+      "estoque": 80,
+      "imagem": "https://example.com/images/calca_jeans_slim.jpg",
+      "marca": "JeansStyle",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "luan_costa",
+          "comentario": "Boa qualidade e caimento perfeito.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "mariana_oliveira",
+          "comentario": "Excelente calça, mas o preço é um pouco alto.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "material": "98% algodão, 2% elastano",
+        "tamanhos_disponiveis": [
+          "36",
+          "38",
+          "40",
+          "42"
+        ],
+        "cores": [
+          "Azul Escuro",
+          "Preto"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Jaqueta de Couro",
+      "descricao": "Jaqueta de couro sintético com detalhes em metal e fechamento com zíper. Estilo rockeiro e moderno.",
+      "preco": 299.99,
+      "estoque": 45,
+      "imagem": "https://example.com/images/jaqueta_couro.jpg",
+      "marca": "LeatherLook",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "joao_pereira",
+          "comentario": "Jaqueta linda e de boa qualidade. Recomendo!",
+          "nota": 4.8
+        },
+        {
+          "usuario": "camila_ferreira",
+          "comentario": "Ótima jaqueta, mas o tamanho é um pouco grande.",
+          "nota": 4.6
+        }
+      ],
+      "especificacoes": {
+        "material": "Couro sintético",
+        "tamanhos_disponiveis": [
+          "P",
+          "M",
+          "G"
+        ],
+        "cores": [
+          "Preto",
+          "Marrom"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Vestido Floral",
+      "descricao": "Vestido floral com ajuste na cintura e saia fluida. Perfeito para ocasiões especiais e eventos.",
+      "preco": 159.99,
+      "estoque": 30,
+      "imagem": "https://example.com/images/vestido_floral.jpg",
+      "marca": "FlowerDress",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "sara_souza",
+          "comentario": "Vestido lindo e confortável. Ideal para festas.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "luana_gomes",
+          "comentario": "Ótimo vestido, mas o ajuste na cintura poderia ser melhor.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "material": "Poliéster",
+        "tamanhos_disponiveis": [
+          "P",
+          "M",
+          "G"
+        ],
+        "cores": [
+          "Azul Floral",
+          "Rosa Floral"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Suéter de Lã",
+      "descricao": "Suéter de lã com design clássico e confortável. Ideal para dias frios e para adicionar um toque de elegância ao visual.",
+      "preco": 89.99,
+      "estoque": 70,
+      "imagem": "https://example.com/images/sueter_la.jpg",
+      "marca": "WarmWear",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "ricardo_martins",
+          "comentario": "Muito quente e confortável. Adorei!",
+          "nota": 4.8
+        },
+        {
+          "usuario": "laura_pereira",
+          "comentario": "Bom suéter, mas poderia ter mais opções de cores.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "material": "100% lã",
+        "tamanhos_disponiveis": [
+          "M",
+          "G",
+          "GG"
+        ],
+        "cores": [
+          "Cinza",
+          "Bege"
+        ]
+      }
+    }
+  ],
+  "acessorios": [
+    {
+      "id": 1,
+      "nome": "Relógio Digital",
+      "descricao": "Relógio digital com visor LCD e funções de cronômetro e alarme. Resistente à água e com design moderno.",
+      "preco": 89.99,
+      "estoque": 60,
+      "imagem": "https://example.com/images/relogio_digital.jpg",
+      "marca": "TimeTech",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "maria_oliveira",
+          "comentario": "Excelente relógio, muito prático e resistente.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "joao_souza",
+          "comentario": "Bom relógio, mas o visor poderia ser mais nítido.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "visor": "LCD",
+        "funcoes": [
+          "Cronômetro",
+          "Alarme"
+        ],
+        "resistencia_agua": "Até 50 metros",
+        "material": "Aço inoxidável"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Óculos de Sol Polarizados",
+      "descricao": "Óculos de sol com lentes polarizadas para proteção UV. Design elegante e armação resistente.",
+      "preco": 149.99,
+      "estoque": 40,
+      "imagem": "https://example.com/images/oculos_polarizados.jpg",
+      "marca": "SunShades",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "lucas_silva",
+          "comentario": "Ótima proteção contra raios UV e muito estilosos.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "ana_lima",
+          "comentario": "Lentes boas, mas a armação é um pouco pesada.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "lentes": "Polarizadas",
+        "protecao_uv": "UV400",
+        "material_armacao": "Acetato",
+        "cores_disponiveis": [
+          "Preto",
+          "Marrom",
+          "Azul"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Carteira de Couro",
+      "descricao": "Carteira de couro genuíno com múltiplos compartimentos para cartões e dinheiro. Design clássico e elegante.",
+      "preco": 79.99,
+      "estoque": 100,
+      "imagem": "https://example.com/images/carteira_couro.jpg",
+      "marca": "LeatherLux",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "juliana_santos",
+          "comentario": "Muito bem feita e espaçosa. Adorei!",
+          "nota": 4.7
+        },
+        {
+          "usuario": "roberto_pereira",
+          "comentario": "Boa qualidade, mas o couro pode soltar um pouco de tinta no início.",
+          "nota": 4.3
+        }
+      ],
+      "especificacoes": {
+        "material": "Couro genuíno",
+        "compartimentos": [
+          "Cartões",
+          "Dinheiro",
+          "Documentos"
+        ],
+        "cores_disponiveis": [
+          "Preto",
+          "Marrom",
+          "Bege"
+        ],
+        "tamanho": "10 x 12 cm"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Bolsa Tote de Lona",
+      "descricao": "Bolsa tote de lona com alças de couro e bolso interno. Espaçosa e ideal para uso diário.",
+      "preco": 119.99,
+      "estoque": 55,
+      "imagem": "https://example.com/images/bolsa_tote.jpg",
+      "marca": "CanvasCarry",
+      "garantia": "6 meses",
+      "avaliacoes": [
+        {
+          "usuario": "daniela_ferreira",
+          "comentario": "Ótima bolsa, resistente e muito prática.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "eduardo_costa",
+          "comentario": "Boa qualidade, mas o bolso interno poderia ser maior.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "material": "Lona e couro",
+        "bolso_interno": "Sim",
+        "dimensoes": "40 x 35 x 10 cm",
+        "cores_disponiveis": [
+          "Bege",
+          "Azul Marinho",
+          "Cinza"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Bracelete de Silicone",
+      "descricao": "Bracelete de silicone com fecho ajustável. Disponível em várias cores e tamanhos.",
+      "preco": 29.99,
+      "estoque": 150,
+      "imagem": "https://example.com/images/bracelete_silicone.jpg",
+      "marca": "FlexiWear",
+      "garantia": "3 meses",
+      "avaliacoes": [
+        {
+          "usuario": "camila_souza",
+          "comentario": "Muito confortável e disponível em muitas cores.",
+          "nota": 4.5
+        },
+        {
+          "usuario": "rafael_santos",
+          "comentario": "Bom bracelete, mas o ajuste pode ser difícil para alguns tamanhos.",
+          "nota": 4.2
+        }
+      ],
+      "especificacoes": {
+        "material": "Silicone",
+        "ajuste": "Fecho ajustável",
+        "tamanhos_disponiveis": [
+          "P",
+          "M",
+          "G"
+        ],
+        "cores_disponiveis": [
+          "Preto",
+          "Azul",
+          "Verde",
+          "Vermelho"
+        ]
+      }
+    }
+  ],
+  "fotografia": [
+    {
+      "id": 1,
+      "nome": "Câmera DSLR Canon EOS 90D",
+      "descricao": "Câmera DSLR com 32.5 MP, gravação de vídeo 4K e sistema de autofoco Dual Pixel. Ideal para fotógrafos profissionais e amadores.",
+      "preco": 1299.99,
+      "estoque": 20,
+      "imagem": "https://example.com/images/camera_canon_eos_90d.jpg",
+      "marca": "Canon",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "marcos_alves",
+          "comentario": "Ótima câmera com excelente qualidade de imagem. Perfeita para trabalho e lazer.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "juliana_pereira",
+          "comentario": "A câmera é ótima, mas o peso pode ser um problema para quem está começando.",
+          "nota": 4.6
+        }
+      ],
+      "especificacoes": {
+        "resolucao": "32.5 MP",
+        "video": "4K",
+        "af": "Dual Pixel",
+        "tela": "3 polegadas, touchscreen"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Lente Nikon AF-S 50mm f/1.8G",
+      "descricao": "Lente prime de 50mm com abertura máxima f/1.8. Ideal para retratos e fotografias em baixa luminosidade.",
+      "preco": 249.99,
+      "estoque": 35,
+      "imagem": "https://example.com/images/lente_nikon_50mm.jpg",
+      "marca": "Nikon",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "larissa_silva",
+          "comentario": "Excelente lente para retratos com ótima nitidez e bokeh.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "pedro_costa",
+          "comentario": "A lente é ótima, mas o foco automático é um pouco lento.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "distancia_focal": "50mm",
+        "abertura_maxima": "f/1.8",
+        "compatibilidade": "Montagem F",
+        "elementos_lenticulares": "7"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Tripé Manfrotto MT190XPRO4",
+      "descricao": "Tripé robusto com altura máxima de 1.70m e coluna central inclinável. Ideal para diversas situações de fotografia e vídeo.",
+      "preco": 199.99,
+      "estoque": 15,
+      "imagem": "https://example.com/images/trepe_manfrotto.jpg",
+      "marca": "Manfrotto",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "renato_martins",
+          "comentario": "Muito resistente e fácil de usar. Vale a pena pelo preço.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "carol_lima",
+          "comentario": "Ótimo tripé, mas poderia ser um pouco mais leve.",
+          "nota": 4.4
+        }
+      ],
+      "especificacoes": {
+        "altura_maxima": "1.70m",
+        "altura_minima": "40cm",
+        "peso": "2.0kg",
+        "material": "Alumínio"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Flash Godox V860II",
+      "descricao": "Flash externo com potência ajustável e bateria de lítio recarregável. Compatível com câmeras Canon e Nikon.",
+      "preco": 299.99,
+      "estoque": 25,
+      "imagem": "https://example.com/images/flash_godox_v860ii.jpg",
+      "marca": "Godox",
+      "garantia": "1 ano",
+      "avaliacoes": [
+        {
+          "usuario": "andre_souza",
+          "comentario": "Ótimo flash com boa potência e duração de bateria. Ideal para eventos.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "sandra_ferreira",
+          "comentario": "Funciona bem, mas o manual poderia ser mais detalhado.",
+          "nota": 4.5
+        }
+      ],
+      "especificacoes": {
+        "potencia": "1/1 - 1/128",
+        "bateria": "Lítio recarregável",
+        "tempo_recarga": "0.1 - 1.7 segundos",
+        "compatibilidade": [
+          "Canon",
+          "Nikon"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Carteira de Memória SanDisk Extreme Pro 64GB",
+      "descricao": "Carteira de memória SD com capacidade de 64GB e velocidade de leitura de até 170MB/s. Ideal para gravação de vídeos em alta resolução.",
+      "preco": 89.99,
+      "estoque": 100,
+      "imagem": "https://example.com/images/carteira_memoria_sandisk.jpg",
+      "marca": "SanDisk",
+      "garantia": "5 anos",
+      "avaliacoes": [
+        {
+          "usuario": "felipe_oliveira",
+          "comentario": "Ótima velocidade de leitura e gravação. Perfeita para vídeos 4K.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "natalia_gomes",
+          "comentario": "Boa capacidade e desempenho, mas o preço é um pouco alto.",
+          "nota": 4.6
+        }
+      ],
+      "especificacoes": {
+        "capacidade": "64GB",
+        "velocidade_leitura": "170MB/s",
+        "velocidade_gravacao": "90MB/s",
+        "tipo": "SD UHS-I"
+      }
+    }
+  ],
+  "livros": [
+    {
+      "id": 1,
+      "nome": "Dom Casmurro",
+      "descricao": "Obra-prima de Machado de Assis, que explora temas como ciúmes e traição através da história de Bentinho e Capitu.",
+      "preco": 39.99,
+      "estoque": 50,
+      "imagem": "https://example.com/images/dom_casmurro.jpg",
+      "autor": "Machado de Assis",
+      "editora": "Companhia das Letras",
+      "ano_publicacao": 1899,
+      "avaliacoes": [
+        {
+          "usuario": "julia_oliveira",
+          "comentario": "Uma leitura fascinante, cheia de nuances e profundidade.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "marcos_silva",
+          "comentario": "Excelente livro, mas a narrativa pode ser um pouco densa.",
+          "nota": 4.5
+        }
+      ],
+      "genero": "Romance"
+    },
+    {
+      "id": 2,
+      "nome": "1984",
+      "descricao": "Romance distópico de George Orwell que explora temas de vigilância e controle em uma sociedade totalitária.",
+      "preco": 29.99,
+      "estoque": 70,
+      "imagem": "https://example.com/images/1984.jpg",
+      "autor": "George Orwell",
+      "editora": "Companhia das Letras",
+      "ano_publicacao": 1949,
+      "avaliacoes": [
+        {
+          "usuario": "lucas_martins",
+          "comentario": "Uma leitura obrigatória para entender as questões de controle social.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "paula_freitas",
+          "comentario": "Muito impactante, mas a visão do futuro é um pouco pessimista.",
+          "nota": 4.6
+        }
+      ],
+      "genero": "Ficção Científica"
+    },
+    {
+      "id": 3,
+      "nome": "A Game of Thrones",
+      "descricao": "Primeiro livro da série 'As Crônicas de Gelo e Fogo', de George R. R. Martin, que mistura política e fantasia em um mundo medieval.",
+      "preco": 49.99,
+      "estoque": 40,
+      "imagem": "https://example.com/images/a_game_of_thrones.jpg",
+      "autor": "George R. R. Martin",
+      "editora": "Leya",
+      "ano_publicacao": 1996,
+      "avaliacoes": [
+        {
+          "usuario": "carol_souza",
+          "comentario": "Uma trama complexa e envolvente, perfeita para fãs de fantasia.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "antonio_gomes",
+          "comentario": "Muito bom, mas a quantidade de personagens pode ser confusa.",
+          "nota": 4.7
+        }
+      ],
+      "genero": "Fantasia"
+    },
+    {
+      "id": 4,
+      "nome": "Sapiens: Uma Breve História da Humanidade",
+      "descricao": "Um olhar abrangente sobre a história da humanidade desde o surgimento dos Homo sapiens até os dias atuais.",
+      "preco": 59.99,
+      "estoque": 30,
+      "imagem": "https://example.com/images/sapiens.jpg",
+      "autor": "Yuval Noah Harari",
+      "editora": "Leya",
+      "ano_publicacao": 2011,
+      "avaliacoes": [
+        {
+          "usuario": "daniela_santos",
+          "comentario": "Uma leitura enriquecedora que oferece uma nova perspectiva sobre a história.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "rafael_costa",
+          "comentario": "Muito interessante, mas algumas partes são um pouco densas.",
+          "nota": 4.5
+        }
+      ],
+      "genero": "Não-Ficção"
+    },
+    {
+      "id": 5,
+      "nome": "O Pequeno Príncipe",
+      "descricao": "Uma fábula poética de Antoine de Saint-Exupéry que explora temas de amor e amizade através das aventuras de um pequeno príncipe.",
+      "preco": 24.99,
+      "estoque": 100,
+      "imagem": "https://example.com/images/o_pequeno_principe.jpg",
+      "autor": "Antoine de Saint-Exupéry",
+      "editora": "Agir",
+      "ano_publicacao": 1943,
+      "avaliacoes": [
+        {
+          "usuario": "beatriz_oliveira",
+          "comentario": "Um clássico atemporal, tocante e cheio de sabedoria.",
+          "nota": 5.0
+        },
+        {
+          "usuario": "joao_pereira",
+          "comentario": "Uma história encantadora que ressoa com todas as idades.",
+          "nota": 4.9
+        }
+      ],
+      "genero": "Infantil"
+    }
+  ],
+  "beleza": [
+    {
+      "id": 1,
+      "nome": "Creme Hidratante Facial",
+      "descricao": "Creme hidratante para o rosto com fórmula enriquecida com vitamina E e ácido hialurônico, ideal para pele seca e sensível.",
+      "preco": 89.99,
+      "estoque": 45,
+      "imagem": "https://example.com/images/creme_hidratante.jpg",
+      "marca": "Beleza&Saúde",
+      "volume": "50 ml",
+      "tipo_ppele": "Seca e Sensível",
+      "avaliacoes": [
+        {
+          "usuario": "ana_pereira",
+          "comentario": "Excelente para hidratar a pele, sem deixar oleosa.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "maria_souza",
+          "comentario": "Muito bom, mas poderia ter um aroma mais suave.",
+          "nota": 4.5
+        }
+      ],
+      "ingredientes": [
+        "Ácido Hialurônico",
+        "Vitamina E",
+        "Manteiga de Karité"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Máscara de Cílios Volume Intenso",
+      "descricao": "Máscara de cílios que proporciona volume extremo e alongamento, com fórmula à prova d'água.",
+      "preco": 49.99,
+      "estoque": 60,
+      "imagem": "https://example.com/images/mascara_cilios.jpg",
+      "marca": "Glamour Eyes",
+      "volume": "10 ml",
+      "tipo_cilios": "Volume Extremo",
+      "avaliacoes": [
+        {
+          "usuario": "juliana_santos",
+          "comentario": "Ótima máscara, realmente dá muito volume e dura o dia todo.",
+          "nota": 4.9
+        },
+        {
+          "usuario": "carla_freitas",
+          "comentario": "Boa, mas a fórmula poderia ser mais fácil de remover.",
+          "nota": 4.6
+        }
+      ],
+      "ingredientes": [
+        "Polímeros Volume",
+        "Cera de Carnaúba",
+        "Pantenol"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Sérum Anti-Idade",
+      "descricao": "Sérum concentrado que reduz sinais de envelhecimento, melhorando a elasticidade e firmeza da pele.",
+      "preco": 129.99,
+      "estoque": 30,
+      "imagem": "https://example.com/images/serum_antiidade.jpg",
+      "marca": "AgeDefy",
+      "volume": "30 ml",
+      "tipo_ppele": "Madura",
+      "avaliacoes": [
+        {
+          "usuario": "renata_martins",
+          "comentario": "Resultados visíveis após poucas semanas de uso.",
+          "nota": 4.8
+        },
+        {
+          "usuario": "patricia_gomes",
+          "comentario": "Bom, mas o preço é um pouco alto.",
+          "nota": 4.4
+        }
+      ],
+      "ingredientes": [
+        "Retinol",
+        "Vitamina C",
+        "Peptídeos"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Esfoliante Corporal com Sal Marinho",
+      "descricao": "Esfoliante corporal com sal marinho e óleos essenciais que remove células mortas e deixa a pele suave e revitalizada.",
+      "preco": 69.99,
+      "estoque": 50,
+      "imagem": "https://example.com/images/esfoliante_corporal.jpg",
+      "marca": "Mar & Sol",
+      "volume": "200 ml",
+      "tipo_ppele": "Todos os Tipos",
+      "avaliacoes": [
+        {
+          "usuario": "leticia_silva",
+          "comentario": "Excelente esfoliação e o cheiro é maravilhoso.",
+          "nota": 4.7
+        },
+        {
+          "usuario": "luana_oliveira",
+          "comentario": "Bom esfoliante, mas o pote poderia ser maior.",
+          "nota": 4.5
+        }
+      ],
+      "ingredientes": [
+        "Sal Marinho",
+        "Óleos Essenciais",
+        "Aloe Vera"
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Gloss Labial Hidratante",
+      "descricao": "Gloss labial com fórmula hidratante e brilho intenso. Ideal para manter os lábios hidratados e com aparência saudável.",
+      "preco": 24.99,
+      "estoque": 100,
+      "imagem": "https://example.com/images/gloss_labial.jpg",
+      "marca": "LipCare",
+      "volume": "15 ml",
+      "tipo_labios": "Hidratante",
+      "avaliacoes": [
+        {
+          "usuario": "camila_costa",
+          "comentario": "Ótimo gloss, deixa os lábios brilhantes e hidratados.",
+          "nota": 4.6
+        },
+        {
+          "usuario": "marina_alves",
+          "comentario": "Muito bom, mas o aplicador poderia ser mais preciso.",
+          "nota": 4.4
+        }
+      ],
+      "ingredientes": [
+        "Manteiga de Cacau",
+        "Óleo de Jojoba",
+        "Vitamina E"
+      ]
+    }
+  ]
+}
