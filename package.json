@@ -1,6 +1,6 @@
 {
   "name": "servidor-produtos-fake-001",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Pacote npm para configurar rapidamente um servidor falso de produtos usando json-server. Ideal para desenvolvimento e testes.",
   "main": "index.js",
   "scripts": {
